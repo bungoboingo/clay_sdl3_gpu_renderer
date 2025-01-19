@@ -1,0 +1,23 @@
+package sdl3
+
+import c "core:c"
+
+// Pen flags
+PEN_INPUT_DOWN :: 1 << 0
+PEN_INPUT_BUTTON_1 :: 1 << 1
+PEN_INPUT_BUTTON_2 :: 1 << 2
+PEN_INPUT_BUTTON_3 :: 1 << 3
+PEN_INPUT_BUTTON_4 :: 1 << 4
+PEN_INPUT_BUTTON_5 :: 1 << 5
+PEN_INPUT_ERASER_TIP :: 1 << 30
+
+PenAxis :: enum c.int {
+	PRESSURE,
+	XTILT,
+	YTILT,
+	DISTANCE,
+	ROTATION,
+	SLIDER,
+	TANGENTIAL_PRESSURE,
+	COUNT,
+}
