@@ -1,15 +1,15 @@
 package clay_renderer
 
+import "base:runtime"
 import "core:c"
 import "core:log"
 import "core:os"
 import "core:strings"
-import "base:runtime"
 import clay "library:clay-odin"
 import sdl "library:sdl3"
 import sdl_ttf "library:sdl3_ttf"
 
-odin_context : runtime.Context
+odin_context: runtime.Context
 
 when ODIN_OS == .Darwin {
 	SHADER_TYPE :: sdl.GPUShaderFormat.MSL

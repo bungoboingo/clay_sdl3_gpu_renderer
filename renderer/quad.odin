@@ -14,12 +14,12 @@ QuadPipeline :: struct {
 }
 
 Quad :: struct {
-	position_scale:     [4]f32,
-	corner_radii:       [4]f32,
-	color:              [4]f32,
-	border_color:       [4]f32,
-	border_width:       f32,
-	_:                  [3]f32,
+	position_scale: [4]f32,
+	corner_radii:   [4]f32,
+	color:          [4]f32,
+	border_color:   [4]f32,
+	border_width:   f32,
+	_:              [3]f32,
 }
 
 @(private)
